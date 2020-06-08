@@ -151,6 +151,7 @@ class weibo():
 				res_json = res.json()
 				# --登录成功
 				if res_json['retcode'] == '0':
+                                        print('cookies: ' % res.cookies.get_dict())
 					break
 				# --用户名或密码错误
 				elif res_json['retcode'] == '101':
